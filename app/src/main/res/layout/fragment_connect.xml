@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.ConnectFragment">
+
+
+    <LinearLayout
+        android:id="@+id/llOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+<!--        <TextView-->
+<!--            android:id="@+id/tv_All"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/texviewshape"-->
+<!--            android:padding="10dp"-->
+<!--            android:layout_margin="6dp"-->
+<!--            android:text="All"/>-->
+
+        <TextView
+            android:id="@+id/tv_Leads"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/texviewshape"
+            android:layout_margin="6dp"
+            android:padding="10dp"
+            android:text="Leads"/>
+
+        <TextView
+            android:id="@+id/tv_Distributor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/texviewshape"
+            android:layout_margin="6dp"
+            android:padding="10dp"
+            android:text="Distributors"/>
+
+        <TextView
+            android:id="@+id/tv_Retailers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/texviewshape"
+            android:layout_margin="6dp"
+            android:padding="10dp"
+            android:text="Retailers"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_Project"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/llOne"
+        android:scrollbarStyle="outsideOverlay"/>
+
+<!--    <com.alphabetik.Alphabetik-->
+<!--        android:id="@+id/alphSectionIndex"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="fill"-->
+<!--       android:layout_marginLeft="330dp"-->
+<!--        android:padding="3dp"-->
+<!--        app:fontSize="14sp"-->
+<!--        app:itemsColor="@color/black"/>-->
+</RelativeLayout>

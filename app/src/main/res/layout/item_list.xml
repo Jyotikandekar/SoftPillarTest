@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="5sp"
+    app:cardCornerRadius="2sp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_shortName"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:text="Hi"
+            android:layout_margin="8dp"
+            android:gravity="center" />
+
+        <LinearLayout
+            android:id="@+id/llOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_shortName"
+            android:layout_marginTop="6dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stage:"/>
+
+            <TextView
+                android:id="@+id/tv_Stage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Demo"/>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_Compony_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_below="@+id/llOne"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/tv_shortName"
+            android:text="Hindustan Feeds,India"/>
+
+        <TextView
+            android:id="@+id/tv_Client_Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_Compony_name"
+            android:layout_toRightOf="@id/tv_shortName"
+            android:text="Farah Baria"/>
+
+        <TextView
+            android:id="@+id/tv_Date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="6dp"
+            android:text="Feb 20,2020"/>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
